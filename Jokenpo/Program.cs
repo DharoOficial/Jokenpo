@@ -2,8 +2,9 @@
 
 namespace Jokenpo
 {
-    class Program
+   public class Program
     {
+        //https://dojopuzzles.com/problems/jokenpo/
         static void Main(string[] args)
         {
             Console.WriteLine("Bem-vindo ao Jokenpo");

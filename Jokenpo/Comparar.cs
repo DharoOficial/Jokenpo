@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Jokenpo
 {
@@ -28,14 +26,12 @@ namespace Jokenpo
 
         public void CompararJogadas(string player1, string player2)
         {
-
             if(player1 == player2)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Empate");
                 Console.ResetColor();
             }
-
 
             if(player1 == "pedra" && player2 == "tesoura" )
             {
@@ -58,32 +54,6 @@ namespace Jokenpo
                 RetornoJogador1Venceu();
             }
             if (player1 == "tesoura" && player2 == "pedra")
-            {
-                RetornoJogador2Venceu();
-            }
-
-            //Logica em correção no primeiro caracter maiusulo
-            if (player1 == "Pedra" && player2 == "Tesoura")
-            {
-                RetornoJogador1Venceu();
-            }
-            if (player1 == "Pedra" && player2 == "Papel")
-            {
-                RetornoJogador2Venceu();
-            }
-            if (player1 == "Papel" && player2 == "Tesoura")
-            {
-                RetornoJogador2Venceu();
-            }
-            if (player1 == "Papel" && player2 == "Pedra")
-            {
-                RetornoJogador1Venceu();
-            }
-            if (player1 == "Tesoura" && player2 == "Papel")
-            {
-                RetornoJogador1Venceu();
-            }
-            if (player1 == "Tesoura" && player2 == "Pedra")
             {
                 RetornoJogador2Venceu();
             }
